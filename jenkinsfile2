@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'linux-agent-new' }
+  agent { label 'linux' }
 
   environment {
     VENV = "${WORKSPACE}/venv"
