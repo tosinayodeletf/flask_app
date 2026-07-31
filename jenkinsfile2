@@ -6,7 +6,7 @@ pipeline{
   stages {
     stage('Checkout Code') {
       steps {
-        git branch: 'main', url: 'https://github.com/madhuri75jha/flask_app.git'
+        git branch: 'main', url: 'https://github.com/tosinayodeletf/flask_app.git'
       }
     }
     stage('Setup Python Environment') {
