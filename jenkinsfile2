@@ -12,14 +12,13 @@ pipeline {
 
     stage('Checkout Code') {
       steps {
-        git branch: 'main', url: 'https://github.com/madhuri75jha/flask_app.git'
+        git branch: 'main', url: 'https://github.com/tosinayodeletf/flask_app.git'
       }
     }
 
     stage('Setup Python Environment') {
       steps {
         sh '''
-        sudo dnf update -y
         sudo dnf install -y python3.11 python3.11-venv
 
         python3.11 -m venv ${VENV}
